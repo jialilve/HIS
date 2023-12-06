@@ -1,0 +1,1 @@
+用espilse导入即可，在此之前最好下载好windowsbuilder插件，一定要将项目文件中util文件夹中DBUTIL内的为空url，username，password换成自己的数据库信息，这里提供现成的数据库sql文件，
