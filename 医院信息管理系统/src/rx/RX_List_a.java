@@ -64,7 +64,7 @@ public class RX_List_a extends JFrame {
 			},
 			new String[] {
 				"\u5904\u65B9\u7F16\u53F7", "\u75C5\u4EBA\u59D3\u540D", "\u533B\u751F\u540D", "\u836F\u54C1\u540D\u79F0", "\u836F\u54C1\u6570\u91CF"
-			}
+			} 
 		));
 		table.getColumnModel().getColumn(0).setPreferredWidth(85);
 		table.getColumnModel().getColumn(1).setPreferredWidth(85);
@@ -73,7 +73,7 @@ public class RX_List_a extends JFrame {
 		table.getTableHeader().setReorderingAllowed(false);
 		scrollPane.setViewportView(table);
 		
-		JLabel lblNewLabel = new JLabel("\u5904\u65B9\u7F16\u53F7");
+		JLabel lblNewLabel = new JLabel("\u5904\u65B9\u7F16\u53F7"); // 处方编号
 		lblNewLabel.setFont(new Font("华文楷体", Font.PLAIN, 20));
 		lblNewLabel.setBounds(10, 393, 80, 33);
 		contentPane.add(lblNewLabel);

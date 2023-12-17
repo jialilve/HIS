@@ -73,7 +73,7 @@ public class paymentlist extends JFrame {
 			},
 			new String[] {
 				"\u5904\u65B9\u7F16\u53F7", "\u75C5\u4EBA\u7F16\u53F7", "\u75C5\u4EBA\u59D3\u540D", "\u533B\u5E08\u59D3\u540D", "\u8BCA\u65AD\u8D39", "\u836F\u7269\u8D39\u7528", "\u603B\u8D39\u7528", "\u7F34\u8D39\u72B6\u6001"
-			}
+			} // 处方编号，病人编号，病人姓名，医生姓名，诊断费，药物费用，总费用，缴费状态
 		));
 		table.getColumnModel().getColumn(0).setPreferredWidth(64);
 		table.getColumnModel().getColumn(1).setPreferredWidth(59);

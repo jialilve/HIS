@@ -82,7 +82,7 @@ public class RecordList extends JFrame {
 		table.getTableHeader().setReorderingAllowed(false);
 		scrollPane.setViewportView(table);
 		
-		JLabel lblNewLabel = new JLabel("\u75C5\u4EBA\u7F16\u53F7");
+		JLabel lblNewLabel = new JLabel("\u75C5\u4EBA\u7F16\u53F7"); // 病人编号
 		lblNewLabel.setFont(new Font("华文楷体", Font.PLAIN, 20));
 		lblNewLabel.setBounds(10, 416, 87, 21);
 		contentPane.add(lblNewLabel);

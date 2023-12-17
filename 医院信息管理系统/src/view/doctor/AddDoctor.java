@@ -40,7 +40,7 @@ public class AddDoctor extends JFrame {
 	 * Create the frame.
 	 */
 	public AddDoctor() {
-		setTitle("\u6B63\u5728\u6DFB\u52A0\u533B\u5E08");
+		setTitle("\u6B63\u5728\u6DFB\u52A0\u533B\u5E08"); // 设置窗口标题
 		
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 396, 483);
@@ -49,7 +49,7 @@ public class AddDoctor extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("\u533B\u5E08\u7F16\u53F7");
+		JLabel lblNewLabel = new JLabel("\u533B\u5E08\u7F16\u53F7"); // 医生编号
 		lblNewLabel.setEnabled(true);
 		lblNewLabel.setFont(new Font("华文楷体", Font.PLAIN, 18));
 		lblNewLabel.setBounds(22, 31, 72, 29);
@@ -60,7 +60,7 @@ public class AddDoctor extends JFrame {
 		contentPane.add(doctor_id);
 		doctor_id.setColumns(10);
 		
-		JLabel lblNewLabel_1 = new JLabel("\u533B\u5E08\u59D3\u540D");
+		JLabel lblNewLabel_1 = new JLabel("\u533B\u5E08\u59D3\u540D"); // 医生姓名
 		lblNewLabel_1.setFont(new Font("华文楷体", Font.PLAIN, 18));
 		lblNewLabel_1.setBounds(193, 31, 93, 29);
 		contentPane.add(lblNewLabel_1);

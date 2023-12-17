@@ -71,11 +71,11 @@ public class SetRXList extends JFrame {
 			},
 			new String[] {
 				"\u836F\u54C1\u7F16\u53F7", "\u836F\u54C1\u540D\u79F0", "\u552E\u4EF7", "\u751F\u4EA7\u5382\u5BB6", "\u836F\u54C1\u7C7B\u578B", "\u5B58\u653E\u4ED3\u5E93", "\u8FDB\u4EF7", "\u5E93\u5B58\u6570\u91CF"
-			}
+			} // 药品编号 药品名称 售价 生产厂家 药品类型 仓库编号 进价 库存数量
 		));
 		scrollPane.setViewportView(table);
 		
-		JLabel lblNewLabel = new JLabel("\u836F\u54C1\u540D\u79F0");
+		JLabel lblNewLabel = new JLabel("\u836F\u54C1\u540D\u79F0"); // 药品名称
 		lblNewLabel.setFont(new Font("华文楷体", Font.PLAIN, 19));
 		lblNewLabel.setBounds(10, 435, 77, 22);
 		contentPane.add(lblNewLabel);
@@ -85,7 +85,7 @@ public class SetRXList extends JFrame {
 		contentPane.add(name);
 		name.setColumns(10);
 		
-		JLabel lblNewLabel_1 = new JLabel("\u751F\u4EA7\u5382\u5BB6");
+		JLabel lblNewLabel_1 = new JLabel("\u751F\u4EA7\u5382\u5BB6"); // 生产厂家
 		lblNewLabel_1.setFont(new Font("华文楷体", Font.PLAIN, 19));
 		lblNewLabel_1.setBounds(10, 493, 77, 22);
 		contentPane.add(lblNewLabel_1);
@@ -95,7 +95,7 @@ public class SetRXList extends JFrame {
 		contentPane.add(firm);
 		firm.setColumns(10);
 		
-		JLabel lblNewLabel_2 = new JLabel("\u7C7B\u578B");
+		JLabel lblNewLabel_2 = new JLabel("\u7C7B\u578B"); // 类型
 		lblNewLabel_2.setFont(new Font("华文楷体", Font.PLAIN, 20));
 		lblNewLabel_2.setBounds(214, 435, 54, 25);
 		contentPane.add(lblNewLabel_2);

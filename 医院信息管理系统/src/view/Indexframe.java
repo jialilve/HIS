@@ -34,6 +34,7 @@ import javax.swing.SwingConstants;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 
+// 管理员界面的窗口
 public class Indexframe extends JFrame {
 
 	private JPanel contentPane;
@@ -68,12 +69,12 @@ public class Indexframe extends JFrame {
 		mnNewMenu.setFont(new Font("华文楷体", Font.PLAIN, 18));
 		menuBar.add(mnNewMenu);
 		
-		JMenu mnNewMenu_1 = new JMenu("\u533B\u5E08\u7BA1\u7406");
-		mnNewMenu_1.setIcon(new ImageIcon(Indexframe.class.getResource("/image/\u533B\u751F (1).png")));
+		JMenu mnNewMenu_1 = new JMenu("\u533B\u5E08\u7BA1\u7406"); // 医师管理
+		mnNewMenu_1.setIcon(new ImageIcon(Indexframe.class.getResource("/image/\u533B\u751F (1).png"))); // 医生 (1).png
 		mnNewMenu_1.setFont(new Font("华文楷体", Font.PLAIN, 18));
 		menuBar.add(mnNewMenu_1);
 		
-		JMenuItem mntmNewMenuItem = new JMenuItem("\u6DFB\u52A0\u533B\u5E08");
+		JMenuItem mntmNewMenuItem = new JMenuItem("\u6DFB\u52A0\u533B\u5E08"); // 添加医师
 		mntmNewMenuItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -84,7 +85,7 @@ public class Indexframe extends JFrame {
 		mntmNewMenuItem.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_1.add(mntmNewMenuItem);
 		
-		JMenuItem mntmNewMenuItem_1 = new JMenuItem("\u533B\u5E08\u4FE1\u606F");
+		JMenuItem mntmNewMenuItem_1 = new JMenuItem("\u533B\u5E08\u4FE1\u606F"); // 医师信息
 		mntmNewMenuItem_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				DoctorListButton(e);
@@ -93,12 +94,12 @@ public class Indexframe extends JFrame {
 		mntmNewMenuItem_1.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_1.add(mntmNewMenuItem_1);
 		
-		JMenu mnNewMenu_2 = new JMenu("\u75C5\u4EBA\u7BA1\u7406");
-		mnNewMenu_2.setIcon(new ImageIcon(Indexframe.class.getResource("/image/\u7528\u6237 (1).png")));
+		JMenu mnNewMenu_2 = new JMenu("\u75C5\u4EBA\u7BA1\u7406"); // 病人管理
+		mnNewMenu_2.setIcon(new ImageIcon(Indexframe.class.getResource("/image/\u7528\u6237 (1).png")));  // 用户 (1).png
 		mnNewMenu_2.setFont(new Font("华文楷体", Font.PLAIN, 18));
 		menuBar.add(mnNewMenu_2);
 		
-		JMenuItem mntmNewMenuItem_2 = new JMenuItem("\u6DFB\u52A0\u75C5\u4EBA");
+		JMenuItem mntmNewMenuItem_2 = new JMenuItem("\u6DFB\u52A0\u75C5\u4EBA"); // 添加病人
 		mntmNewMenuItem_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -108,7 +109,7 @@ public class Indexframe extends JFrame {
 		mntmNewMenuItem_2.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_2.add(mntmNewMenuItem_2);
 		
-		JMenuItem mntmNewMenuItem_3 = new JMenuItem("\u75C5\u4EBA\u5217\u8868");
+		JMenuItem mntmNewMenuItem_3 = new JMenuItem("\u75C5\u4EBA\u5217\u8868"); // 病人列表
 		mntmNewMenuItem_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			     patientList(e);
@@ -117,12 +118,12 @@ public class Indexframe extends JFrame {
 		mntmNewMenuItem_3.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_2.add(mntmNewMenuItem_3);
 		
-		JMenu mnNewMenu_3 = new JMenu("\u79D1\u5BA4\u7BA1\u7406");
-		mnNewMenu_3.setIcon(new ImageIcon(Indexframe.class.getResource("/image/\u516C\u53F8 (1).png")));
+		JMenu mnNewMenu_3 = new JMenu("\u79D1\u5BA4\u7BA1\u7406"); // 科室管理
+		mnNewMenu_3.setIcon(new ImageIcon(Indexframe.class.getResource("/image/\u516C\u53F8 (1).png"))); // 公司 (1).png
 		mnNewMenu_3.setFont(new Font("华文楷体", Font.PLAIN, 18));
 		menuBar.add(mnNewMenu_3);
 		
-		JMenuItem deparmentlist = new JMenuItem("\u79D1\u5BA4\u4FE1\u606F");
+		JMenuItem deparmentlist = new JMenuItem("\u79D1\u5BA4\u4FE1\u606F"); // 科室信息
 		deparmentlist.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -132,7 +133,7 @@ public class Indexframe extends JFrame {
 		deparmentlist.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_3.add(deparmentlist);
 		
-		JMenuItem mntmNewMenuItem_5 = new JMenuItem("\u5C31\u8BCA\u60C5\u51B5");
+		JMenuItem mntmNewMenuItem_5 = new JMenuItem("\u5C31\u8BCA\u60C5\u51B5"); // 就诊情况
 		mntmNewMenuItem_5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				adddeparset(e);
@@ -151,12 +152,12 @@ public class Indexframe extends JFrame {
 		mntmNewMenuItem_11.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_3.add(mntmNewMenuItem_11);
 		
-		JMenu mnNewMenu_4 = new JMenu("\u836F\u54C1\u7BA1\u7406");
-		mnNewMenu_4.setIcon(new ImageIcon(Indexframe.class.getResource("/image/\u836F\u54C1 (1).png")));
+		JMenu mnNewMenu_4 = new JMenu("\u836F\u54C1\u7BA1\u7406"); // 药品管理
+		mnNewMenu_4.setIcon(new ImageIcon(Indexframe.class.getResource("/image/\u836F\u54C1 (1).png"))); // 药品 (1).png
 		mnNewMenu_4.setFont(new Font("华文楷体", Font.PLAIN, 18));
 		menuBar.add(mnNewMenu_4);
 		
-		JMenuItem mntmNewMenuItem_4 = new JMenuItem("\u5165\u5E93\u7BA1\u7406");
+		JMenuItem mntmNewMenuItem_4 = new JMenuItem("\u5165\u5E93\u7BA1\u7406"); // 入库管理 
 		mntmNewMenuItem_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -166,7 +167,7 @@ public class Indexframe extends JFrame {
 		mntmNewMenuItem_4.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_4.add(mntmNewMenuItem_4);
 		
-		JMenuItem mntmNewMenuItem_6 = new JMenuItem("\u51FA\u5E93\u7BA1\u7406");
+		JMenuItem mntmNewMenuItem_6 = new JMenuItem("\u51FA\u5E93\u7BA1\u7406"); // 出库管理
 		mntmNewMenuItem_6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				deButton(e);
@@ -175,7 +176,7 @@ public class Indexframe extends JFrame {
 		mntmNewMenuItem_6.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_4.add(mntmNewMenuItem_6);
 		
-		JMenuItem mntmNewMenuItem_7 = new JMenuItem("\u836F\u54C1\u4FE1\u606F");
+		JMenuItem mntmNewMenuItem_7 = new JMenuItem("\u836F\u54C1\u4FE1\u606F"); // 药品信息 
 		mntmNewMenuItem_7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				MedicineList(e);
@@ -184,12 +185,12 @@ public class Indexframe extends JFrame {
 		mntmNewMenuItem_7.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_4.add(mntmNewMenuItem_7);
 		
-		JMenu mnNewMenu_6 = new JMenu("\u5C31\u8BCA\u7BA1\u7406");
-		mnNewMenu_6.setIcon(new ImageIcon(Indexframe.class.getResource("/image/\u533B\u7597\u670D\u52A1.png")));
+		JMenu mnNewMenu_6 = new JMenu("\u5C31\u8BCA\u7BA1\u7406"); // 就诊管理 
+		mnNewMenu_6.setIcon(new ImageIcon(Indexframe.class.getResource("/image/\u533B\u7597\u670D\u52A1.png"))); // 医疗服务.png
 		mnNewMenu_6.setFont(new Font("华文楷体", Font.PLAIN, 18));
 		menuBar.add(mnNewMenu_6);
 		
-		JMenuItem mntmNewMenuItem_9 = new JMenuItem("\u8BCA\u65AD\u67E5\u8BE2");
+		JMenuItem mntmNewMenuItem_9 = new JMenuItem("\u8BCA\u65AD\u67E5\u8BE2"); // 诊断查询
 		mntmNewMenuItem_9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -199,7 +200,7 @@ public class Indexframe extends JFrame {
 		mntmNewMenuItem_9.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_6.add(mntmNewMenuItem_9);
 		
-		JMenuItem mntmNewMenuItem_10 = new JMenuItem("\u5904\u65B9\u67E5\u8BE2");
+		JMenuItem mntmNewMenuItem_10 = new JMenuItem("\u5904\u65B9\u67E5\u8BE2"); // 处方查询 
 		mntmNewMenuItem_10.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -209,12 +210,12 @@ public class Indexframe extends JFrame {
 		mntmNewMenuItem_10.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_6.add(mntmNewMenuItem_10);
 		
-		JMenu mnNewMenu_5 = new JMenu("\u7F34\u8D39\u7BA1\u7406");
-		mnNewMenu_5.setIcon(new ImageIcon(Indexframe.class.getResource("/image/\u7F34\u8D39.png")));
+		JMenu mnNewMenu_5 = new JMenu("\u7F34\u8D39\u7BA1\u7406"); // 缴费管理
+		mnNewMenu_5.setIcon(new ImageIcon(Indexframe.class.getResource("/image/\u7F34\u8D39.png"))); // 缴费.png
 		mnNewMenu_5.setFont(new Font("华文楷体", Font.PLAIN, 19));
 		menuBar.add(mnNewMenu_5);
 		
-		JMenuItem mntmNewMenuItem_8 = new JMenuItem("\u7F34\u8D39\u4FE1\u606F");
+		JMenuItem mntmNewMenuItem_8 = new JMenuItem("\u7F34\u8D39\u4FE1\u606F"); // 缴费信息
 		mntmNewMenuItem_8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				paylist(e);
@@ -228,7 +229,7 @@ public class Indexframe extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("\u6B22\u8FCE\u4F7F\u7528\u533B\u9662\u4FE1\u606F\u7BA1\u7406\u7CFB\u7EDF");
+		JLabel lblNewLabel = new JLabel("\u6B22\u8FCE\u4F7F\u7528\u533B\u9662\u4FE1\u606F\u7BA1\u7406\u7CFB\u7EDF"); // 欢迎使用医院信息管理系统
 		lblNewLabel.setFont(new Font("华文楷体", Font.PLAIN, 39));
 		lblNewLabel.setBounds(183, 155, 588, 222);
 		contentPane.add(lblNewLabel);

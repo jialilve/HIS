@@ -81,7 +81,7 @@ public class DepartmentList extends JFrame {
 			},
 			new String[] {
 				"\u79D1\u5BA4\u7F16\u53F7", "\u79D1\u5BA4\u540D", "\u79D1\u5BA4\u533B\u5E08\u6570\u91CF", "\u79D1\u5BA4\u63CF\u8FF0"
-			}
+			} // 科室编号，科室名，科室医生数量，科室描述
 		));
 		table.setBackground(new Color(200,210,210));
 		table.getTableHeader().setReorderingAllowed(false);
@@ -89,7 +89,7 @@ public class DepartmentList extends JFrame {
 		table.getColumnModel().getColumn(3).setPreferredWidth(181);
 		scrollPane.setViewportView(table);
 		
-		JLabel lblNewLabel = new JLabel("\u79D1\u5BA4\u7F16\u53F7");
+		JLabel lblNewLabel = new JLabel("\u79D1\u5BA4\u7F16\u53F7"); // 科室编号
 		lblNewLabel.setFont(new Font("华文楷体", Font.PLAIN, 20));
 		lblNewLabel.setBounds(10, 434, 89, 27);
 		contentPane.add(lblNewLabel);

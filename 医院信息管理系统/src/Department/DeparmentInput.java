@@ -78,13 +78,13 @@ public class DeparmentInput extends JFrame {
 			},
 			new String[] {
 				"\u5C31\u8BCA\u65F6\u95F4", "\u79D1\u5BA4", "\u75C5\u4EBA\u7F16\u53F7", "\u75C5\u4EBA\u59D3\u540D", "\u63A5\u8BCA\u533B\u5E08"
-			}
+			} // 就诊时间，科室，病人编号，病人姓名，接诊医生
 		));
 		table.setBackground(new Color(200,210,210));
 		table.getTableHeader().setReorderingAllowed(false);
 		scrollPane.setViewportView(table);
 		
-		JLabel lblNewLabel = new JLabel("\u65F6\u95F4\u4E00");
+		JLabel lblNewLabel = new JLabel("\u65F6\u95F4\u4E00"); // 时间一
 		lblNewLabel.setFont(new Font("华文楷体", Font.PLAIN, 20));
 		lblNewLabel.setBounds(10, 447, 77, 15);
 		contentPane.add(lblNewLabel);

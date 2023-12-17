@@ -1,11 +1,20 @@
+// 定义了一个名为 "dao" 的包，这个包可能包含了与数据访问对象（DAO）相关的类
 package dao;
 
+// 导入了 "java.sql" 包中的 "ResultSet" 和 "SQLException" 类，这些类用于处理数据库查询结果和异常
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+// 导入了 "java.util" 包中的 "ArrayList" 类，这个类是一个动态数组，用于存储和管理数据
 import java.util.ArrayList;
 
+// 导入了 "model" 包中的 "Book" 类，这个类可能是一个数据模型，用于存储和管理书籍的信息
 import model.Book;
+
+// 导入了 "model" 包中的 "Patient" 类，这个类可能是一个数据模型，用于存储和管理病人的信息
 import model.Patient;
+
+// 导入了 "model" 包中的 "Payment" 类，这个类可能是一个数据模型，用于存储和管理支付的信息
 import model.Payment;
 
 public class PaymentDao extends BaseDao
@@ -138,7 +147,7 @@ public class PaymentDao extends BaseDao
    	 String resultstr="添加失败";
    	 String sql1="select Dlevel from doctor where Doid = '"+Doid+"'";
    	 String sql2="select count(*) from payment";
-   	 String sql3="select sum from pay where Rxid='"+Rxid+"'";
+   	 String sql3="select `SUM(opener.Onumber*medicine.Price)` from pay where Rxid='"+Rxid+"'";
    	 String sql="insert payment values(?,?,?,?,?,?,?)";
    	int sum1=0;
    	double cost1=0,cost2=0;
@@ -186,7 +195,12 @@ public class PaymentDao extends BaseDao
 			}
 		try 
 	   	 {
-	   		
+	   	/*
+	 String sql1="select Dlevel from doctor where Doid = '"+Doid+"'";
+   	 String sql2="select count(*) from payment";
+   	 String sql3="select sum from pay where Rxid='"+Rxid+"'";
+   	 String sql="insert payment values(?,?,?,?,?,?,?)";
+		 */
 	     this.pSatement=this.con.prepareStatement(sql3);
 		     
 		    	ResultSet executeQuery=this.pSatement.executeQuery();
@@ -199,8 +213,8 @@ public class PaymentDao extends BaseDao
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-   		 
-   	  
+   	// debug输出cost2
+	System.out.println("debug cost2: " + cost2);
    	 try 
    	 {
    		

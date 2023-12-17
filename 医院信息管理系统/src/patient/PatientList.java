@@ -77,14 +77,14 @@ public class PatientList extends JFrame {
 			},
 			new String[] {
 				"\u75C5\u4EBA\u7F16\u53F7", "\u59D3\u540D", "\u6027\u522B", "\u5E74\u9F84", "\u8D26\u6237\u4F59\u989D", "\u7C4D\u8D2F", "\u75C5\u4EBA\u5907\u6CE8"
-			}
+			} // 病人编号，姓名，性别，年龄，账户余额，病情，病人备注
 		));
 		table.getColumnModel().getColumn(4).setPreferredWidth(83);
 		table.getColumnModel().getColumn(5).setPreferredWidth(88);
 		table.getColumnModel().getColumn(6).setPreferredWidth(105);
 		scrollPane.setViewportView(table);
 		
-		JLabel lblNewLabel = new JLabel("\u75C5\u4EBA\u7F16\u53F7");
+		JLabel lblNewLabel = new JLabel("\u75C5\u4EBA\u7F16\u53F7"); // 病人编号
 		lblNewLabel.setFont(new Font("华文楷体", Font.PLAIN, 19));
 		lblNewLabel.setBounds(10, 387, 82, 21);
 		contentPane.add(lblNewLabel);
@@ -94,7 +94,7 @@ public class PatientList extends JFrame {
 		contentPane.add(id);
 		id.setColumns(10);
 		
-		JLabel lblNewLabel_1 = new JLabel("\u59D3\u540D");
+		JLabel lblNewLabel_1 = new JLabel("\u59D3\u540D"); // 姓名
 		lblNewLabel_1.setFont(new Font("华文楷体", Font.PLAIN, 19));
 		lblNewLabel_1.setBounds(232, 387, 54, 21);
 		contentPane.add(lblNewLabel_1);
@@ -104,7 +104,7 @@ public class PatientList extends JFrame {
 		contentPane.add(name);
 		name.setColumns(10);
 		
-		JLabel lblNewLabel_2 = new JLabel("\u6027\u522B");
+		JLabel lblNewLabel_2 = new JLabel("\u6027\u522B"); // 性别
 		lblNewLabel_2.setFont(new Font("华文楷体", Font.PLAIN, 19));
 		lblNewLabel_2.setBounds(10, 441, 63, 21);
 		contentPane.add(lblNewLabel_2);
@@ -114,7 +114,7 @@ public class PatientList extends JFrame {
 		contentPane.add(sex);
 		sex.setColumns(10);
 		
-		JButton btnNewButton = new JButton("\u641C\u7D22");
+		JButton btnNewButton = new JButton("\u641C\u7D22"); // 搜索
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -126,7 +126,7 @@ public class PatientList extends JFrame {
 		btnNewButton.setBounds(465, 389, 93, 23);
 		contentPane.add(btnNewButton);
 		
-		editButton = new JButton(" \u7F16\u8F91");
+		editButton = new JButton(" \u7F16\u8F91"); // 编辑
 		editButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				editButton(e);

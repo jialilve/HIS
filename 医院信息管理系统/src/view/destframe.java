@@ -67,12 +67,12 @@ public class destframe extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel_1 = new JLabel("\u5F00\u59CB\u65E5\u671F");
+		JLabel lblNewLabel_1 = new JLabel("\u5F00\u59CB\u65E5\u671F"); // 开始日期
 		lblNewLabel_1.setFont(new Font("华文楷体", Font.PLAIN, 20));
 		lblNewLabel_1.setBounds(29, 31, 108, 38);
 		contentPane.add(lblNewLabel_1);
 		
-		JLabel lblNewLabel = new JLabel("\u7ED3\u675F\u65E5\u671F");
+		JLabel lblNewLabel = new JLabel("\u7ED3\u675F\u65E5\u671F"); // 结束日期
 		lblNewLabel.setFont(new Font("华文楷体", Font.PLAIN, 20));
 		lblNewLabel.setBounds(282, 39, 113, 23);
 		contentPane.add(lblNewLabel);
@@ -87,7 +87,7 @@ public class destframe extends JFrame {
 		contentPane.add(date2);
 		date2.setColumns(10);
 		
-		JButton btnNewButton = new JButton("\u67E5\u8BE2");
+		JButton btnNewButton = new JButton("\u67E5\u8BE2"); // 查询
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -109,7 +109,7 @@ public class destframe extends JFrame {
 			new Object[][] {
 			},
 			new String[] {
-				"\u79D1\u5BA4", "\u5C31\u8BCA\u4EBA\u6570"
+				"\u79D1\u5BA4", "\u5C31\u8BCA\u4EBA\u6570" // 科室，就诊人数
 			}
 		));
 		scrollPane.setViewportView(table);
@@ -125,12 +125,12 @@ public class destframe extends JFrame {
 			new Object[][] {
 			},
 			new String[] {
-				"\u836F\u7269\u540D\u79F0", "\u6570\u91CF"
+				"\u836F\u7269\u540D\u79F0", "\u6570\u91CF" // 药物名称，数量
 			}
 		));
 		scrollPane_1.setViewportView(table_1);
 		
-		JLabel lblNewLabel_2 = new JLabel("\u836F\u7269\u6570\u91CF\u8868");
+		JLabel lblNewLabel_2 = new JLabel("\u836F\u7269\u6570\u91CF\u8868"); // 药物数量表
 		lblNewLabel_2.setFont(new Font("华文楷体", Font.PLAIN, 22));
 		lblNewLabel_2.setBounds(274, 260, 236, 23);
 		contentPane.add(lblNewLabel_2);

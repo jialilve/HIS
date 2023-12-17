@@ -49,8 +49,8 @@ public class DoctorList extends JFrame {
 	 * Create the frame.
 	 */
 	public DoctorList() {
-		setIconImage(Toolkit.getDefaultToolkit().getImage(DoctorList.class.getResource("/image/\u6392\u8BFE.png")));
-		setTitle("\u533B\u5E08\u5217\u8868");
+		setIconImage(Toolkit.getDefaultToolkit().getImage(DoctorList.class.getResource("/image/\u6392\u8BFE.png"))); // 设置窗口的图标
+		setTitle("\u533B\u5E08\u5217\u8868"); // 医师列表
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 867, 493);
 		contentPane = new JPanel();

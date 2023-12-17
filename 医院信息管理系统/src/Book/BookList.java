@@ -236,14 +236,14 @@ public class BookList extends JFrame {
 	}
 	 
 	 
-	protected void bookButton(ActionEvent e) {
+	protected void bookButton(ActionEvent e) { // 挂号
 		// TODO Auto-generated method stub
 	    AddBook dk=new AddBook(this.id);
-	    dk.setVisible(true);
+	    dk.setVisible(true); // setvisible(true)方法用于显示窗口
 	}
 
 
-	protected void selectRow(MouseEvent e) 
+	protected void selectRow(MouseEvent e)  // 选中某一行
 	{
 		// TODO Auto-generated method stub
 		this.doctor_id.setText(dtm.getValueAt(this.DoctorList.getSelectedRow(), 0).toString());
@@ -253,7 +253,7 @@ public class BookList extends JFrame {
 		//this.editButton.setEnabled(true);
 		//this.deleteButton.setEnabled(true);
 	}
-	protected void selecSomeoneDoctor(ActionEvent e) {
+	protected void selecSomeoneDoctor(ActionEvent e) { // 搜索
 		// TODO Auto-generated method stub
 		String name=this.doctor_name.getText();
 		String id=this.doctor_id.getText();
@@ -283,7 +283,7 @@ public class BookList extends JFrame {
 		
 	}
 
-	protected void reButton(ActionEvent e) {
+	protected void reButton(ActionEvent e) { // 重置
 		// TODO Auto-generated method stub
 		this.doctor_id.setText("");
 		this.doctor_de.setText("");
@@ -291,7 +291,7 @@ public class BookList extends JFrame {
 		this.doctor_name.setText("");
 	}
     
-	public void queryAlldoctor()
+	public void queryAlldoctor() // 查询所有医生
 	{
 		this.dtm.setRowCount(0);
 		DoctorDao doctordao=new DoctorDao();

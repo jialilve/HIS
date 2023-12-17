@@ -60,12 +60,12 @@ public class StoreList extends JFrame {
 			},
 			new String[] {
 				"\u4ED3\u5E93\u7F16\u53F7", "\u836F\u54C1\u7F16\u53F7", "\u836F\u54C1\u540D", "\u6570\u91CF", "\u4ED3\u5E93\u8D1F\u8D23\u4EBA"
-			}
-		));
+			} // 仓库编号 药品编号 药品名 数量 负责人
+		)); 
 		table.getColumnModel().getColumn(2).setPreferredWidth(98);
 		scrollPane.setViewportView(table);
 		
-		JButton btnNewButton = new JButton("\u641C\u7D22");
+		JButton btnNewButton = new JButton("\u641C\u7D22"); // 查询
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -76,7 +76,7 @@ public class StoreList extends JFrame {
 		btnNewButton.setBounds(348, 362, 93, 26);
 		contentPane.add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("\u6DFB\u52A0");
+		JButton btnNewButton_1 = new JButton("\u6DFB\u52A0"); // 添加
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -87,7 +87,7 @@ public class StoreList extends JFrame {
 		btnNewButton_1.setBounds(497, 362, 93, 26);
 		contentPane.add(btnNewButton_1);
 		
-		JButton btnNewButton_2 = new JButton("\u91CD\u7F6E");
+		JButton btnNewButton_2 = new JButton("\u91CD\u7F6E"); // 重置
 		btnNewButton_2.setFont(new Font("华文楷体", Font.PLAIN, 20));
 		btnNewButton_2.setBounds(638, 365, 93, 23);
 		contentPane.add(btnNewButton_2);

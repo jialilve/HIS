@@ -61,7 +61,7 @@ public class Indexframe_d extends JFrame {
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
-		JMenu mnNewMenu = new JMenu("\u6B22\u8FCE");
+		JMenu mnNewMenu = new JMenu("\u6B22\u8FCE"); // 欢迎
 		mnNewMenu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -71,12 +71,12 @@ public class Indexframe_d extends JFrame {
 		mnNewMenu.setFont(new Font("华文楷体", Font.PLAIN, 18));
 		menuBar.add(mnNewMenu);
 		
-		JMenu mnNewMenu_1 = new JMenu("\u4E2A\u4EBA\u4FE1\u606F\u7BA1\u7406");
-		mnNewMenu_1.setIcon(new ImageIcon(Indexframe_d.class.getResource("/image/\u7F16\u8F91.png")));
+		JMenu mnNewMenu_1 = new JMenu("\u4E2A\u4EBA\u4FE1\u606F\u7BA1\u7406"); // 个人信息管理
+		mnNewMenu_1.setIcon(new ImageIcon(Indexframe_d.class.getResource("/image/\u7F16\u8F91.png"))); // 编辑
 		mnNewMenu_1.setFont(new Font("华文楷体", Font.PLAIN, 18));
 		menuBar.add(mnNewMenu_1);
 		
-		JMenuItem mntmNewMenuItem = new JMenuItem("\u7F16\u8F91");
+		JMenuItem mntmNewMenuItem = new JMenuItem("\u7F16\u8F91"); // 编辑
 		mntmNewMenuItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -87,12 +87,12 @@ public class Indexframe_d extends JFrame {
 		mntmNewMenuItem.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_1.add(mntmNewMenuItem);
 		
-		JMenu mnNewMenu_2 = new JMenu("\u75C5\u4EBA\u7BA1\u7406");
-		mnNewMenu_2.setIcon(new ImageIcon(Indexframe_d.class.getResource("/image/\u7528\u6237 (1).png")));
+		JMenu mnNewMenu_2 = new JMenu("\u75C5\u4EBA\u7BA1\u7406"); // 病人管理
+		mnNewMenu_2.setIcon(new ImageIcon(Indexframe_d.class.getResource("/image/\u7528\u6237 (1).png"))); // 用户
 		mnNewMenu_2.setFont(new Font("华文楷体", Font.PLAIN, 18));
 		menuBar.add(mnNewMenu_2);
 		
-		JMenuItem mntmNewMenuItem_3 = new JMenuItem("\u75C5\u4EBA\u5217\u8868");
+		JMenuItem mntmNewMenuItem_3 = new JMenuItem("\u75C5\u4EBA\u5217\u8868"); // 病人列表
 		mntmNewMenuItem_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				patientList_d(e);
@@ -101,12 +101,12 @@ public class Indexframe_d extends JFrame {
 		mntmNewMenuItem_3.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_2.add(mntmNewMenuItem_3);
 		
-		JMenu mnNewMenu_4 = new JMenu("\u5C31\u8BCA\u7BA1\u7406");
-		mnNewMenu_4.setIcon(new ImageIcon(Indexframe_d.class.getResource("/image/\u9884\u7EA6\u6302\u53F7.png")));
+		JMenu mnNewMenu_4 = new JMenu("\u5C31\u8BCA\u7BA1\u7406"); // 就诊管理
+		mnNewMenu_4.setIcon(new ImageIcon(Indexframe_d.class.getResource("/image/\u9884\u7EA6\u6302\u53F7.png"))); // 预约挂号
 		mnNewMenu_4.setFont(new Font("华文楷体", Font.PLAIN, 18));
 		menuBar.add(mnNewMenu_4);
 		
-		JMenuItem mntmNewMenuItem_2 = new JMenuItem("\u5C31\u8BCA\u67E5\u8BE2");
+		JMenuItem mntmNewMenuItem_2 = new JMenuItem("\u5C31\u8BCA\u67E5\u8BE2"); 		// 就诊查询
 		mntmNewMenuItem_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -116,12 +116,12 @@ public class Indexframe_d extends JFrame {
 		mntmNewMenuItem_2.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_4.add(mntmNewMenuItem_2);
 		
-		JMenu mnNewMenu_3 = new JMenu("\u5904\u65B9\u7BA1\u7406");
-		mnNewMenu_3.setIcon(new ImageIcon(Indexframe_d.class.getResource("/image/\u6392\u8BFE.png")));
+		JMenu mnNewMenu_3 = new JMenu("\u5904\u65B9\u7BA1\u7406"); // 处方管理
+		mnNewMenu_3.setIcon(new ImageIcon(Indexframe_d.class.getResource("/image/\u6392\u8BFE.png"))); // 排课
 		mnNewMenu_3.setFont(new Font("华文楷体", Font.PLAIN, 18));
 		menuBar.add(mnNewMenu_3);
 		
-		JMenuItem deparmentlist = new JMenuItem("\u5904\u65B9\u4FE1\u606F");
+		JMenuItem deparmentlist = new JMenuItem("\u5904\u65B9\u4FE1\u606F"); // 处方信息
 		deparmentlist.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -131,7 +131,7 @@ public class Indexframe_d extends JFrame {
 		deparmentlist.setFont(new Font("华文楷体", Font.PLAIN, 16));
 		mnNewMenu_3.add(deparmentlist);
 		
-		JMenuItem mntmNewMenuItem_5 = new JMenuItem("\u767B\u8BB0\u5904\u65B9");
+		JMenuItem mntmNewMenuItem_5 = new JMenuItem("\u767B\u8BB0\u5904\u65B9"); // 登记处方
 		mntmNewMenuItem_5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				AddRx(e);

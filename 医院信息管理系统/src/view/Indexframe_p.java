@@ -68,7 +68,7 @@ public class Indexframe_p extends JFrame {
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
-		JMenu mnNewMenu = new JMenu("\u6B22\u8FCE");
+		JMenu mnNewMenu = new JMenu("\u6B22\u8FCE"); // »¶Ó­
 		mnNewMenu.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{

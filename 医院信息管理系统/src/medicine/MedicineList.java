@@ -84,11 +84,11 @@ public class MedicineList extends JFrame {
 			},
 			new String[] {
 				"\u836F\u54C1\u7F16\u53F7", "\u836F\u54C1\u540D\u79F0", "\u552E\u4EF7", "\u751F\u4EA7\u5382\u5BB6", "\u836F\u54C1\u7C7B\u578B", "\u4ED3\u5E93\u7F16\u53F7", "\u8FDB\u4EF7", "\u5E93\u5B58\u6570\u91CF"
-			}
+			} 
 		));
 		scrollPane.setViewportView(table);
 		
-		JLabel lblNewLabel = new JLabel("\u836F\u54C1\u540D\u79F0");
+		JLabel lblNewLabel = new JLabel("\u836F\u54C1\u540D\u79F0");  // 药品名称
 		lblNewLabel.setFont(new Font("华文楷体", Font.PLAIN, 19));
 		lblNewLabel.setBounds(10, 435, 77, 22);
 		contentPane.add(lblNewLabel);

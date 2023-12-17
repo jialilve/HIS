@@ -55,8 +55,8 @@ public class loginframe extends JFrame {
 	 * Create the frame.
 	 */
 	public loginframe() {
-		setTitle("\u767B\u5F55\u9875\u9762");
-		setIconImage(Toolkit.getDefaultToolkit().getImage(loginframe.class.getResource("/image/\u516C\u53F8 (1).png")));
+		setTitle("\u767B\u5F55\u9875\u9762"); // 登录页面
+		setIconImage(Toolkit.getDefaultToolkit().getImage(loginframe.class.getResource("/image/\u516C\u53F8 (1).png"))); // 公司
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 552, 422);
 		contentPane = new JPanel();
@@ -66,13 +66,13 @@ public class loginframe extends JFrame {
 		
 		// Image img=new ImageIcon("D:\\eclipse1\\医院信息管理系统\\src\\image\\首页.jpeg").getImage();
 		
-		JLabel lblNewLabel = new JLabel("\u533B\u9662\u4FE1\u606F\u7BA1\u7406\u7CFB\u7EDF");
+		JLabel lblNewLabel = new JLabel("\u533B\u9662\u4FE1\u606F\u7BA1\u7406\u7CFB\u7EDF"); // 医院信息管理系统
 		lblNewLabel.setFont(new Font("华文楷体", Font.PLAIN, 42));
 		lblNewLabel.setBounds(94, 27, 377, 75);
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("\u7528\u6237\u540D");
-		lblNewLabel_1.setIcon(new ImageIcon(loginframe.class.getResource("/image/\u7528\u6237\u540D.png")));
+		JLabel lblNewLabel_1 = new JLabel("\u7528\u6237\u540D"); // 用户名
+		lblNewLabel_1.setIcon(new ImageIcon(loginframe.class.getResource("/image/\u7528\u6237\u540D.png"))); // 用户名图标
 		lblNewLabel_1.setFont(new Font("华文楷体", Font.PLAIN, 21));
 		lblNewLabel_1.setBounds(70, 115, 92, 39);
 		contentPane.add(lblNewLabel_1);
@@ -82,8 +82,8 @@ public class loginframe extends JFrame {
 		contentPane.add(adminName);
 		adminName.setColumns(10);
 		
-		JLabel lblNewLabel_2 = new JLabel("\u5BC6    \u7801");
-		lblNewLabel_2.setIcon(new ImageIcon(loginframe.class.getResource("/image/\u5BC6\u7801.png")));
+		JLabel lblNewLabel_2 = new JLabel("\u5BC6    \u7801"); // 密码
+		lblNewLabel_2.setIcon(new ImageIcon(loginframe.class.getResource("/image/\u5BC6\u7801.png"))); // 密码图标
 		lblNewLabel_2.setFont(new Font("华文楷体", Font.PLAIN, 21));
 		lblNewLabel_2.setBounds(70, 186, 92, 28);
 		contentPane.add(lblNewLabel_2);
